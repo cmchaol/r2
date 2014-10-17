@@ -1,0 +1,3 @@
+Using Emacs, Org-mode and R for Research Writing in Social Sciences: A Toolkit for Writing Reproducible Research Papers and Monographs
+
+[[https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org]]
