@@ -1,0 +1,12 @@
+[[https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org]]
+
+[[https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org#embedding-r-code-in-an-org-document]]
+
+#+BEGIN_EXAMPLE
+,#+NAME: name_of_code_block
+,#+BEGIN_SRC R <switches> <header-arguments>
+
+  <Your R code goes here.>
+
+,#+END_SRC
+#+END_EXAMPLE
