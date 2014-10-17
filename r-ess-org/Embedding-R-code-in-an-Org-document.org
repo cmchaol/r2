@@ -1,5 +1,3 @@
-[[https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org]]
-
 [[https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org#embedding-r-code-in-an-org-document]]
 
 #+BEGIN_EXAMPLE
@@ -10,3 +8,7 @@
 
 ,#+END_SRC
 #+END_EXAMPLE
+
+copy, paste and edit
+
+Then with your cursor in between the BEGIN_SRC and the END_SRC lines, give the command C-c ’ (that is, press Ctrl-C, release, and press ‘). 
