@@ -1,5 +1,12 @@
-* import excel
+* goals
 
-* list the column name
+** Read Excel files from R
 
-* description statistics
+[[http://www.r-bloggers.com/read-excel-files-from-r/]]
+
+
+** list the column name
+
+
+
+** description statistics
