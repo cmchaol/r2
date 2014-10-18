@@ -1,0 +1,30 @@
+14.1 Structure of code blocks
+
+[[http://orgmode.org/manual/Structure-of-code-blocks.html#Structure-of-code-blocks]]
+
+
+| 2 structures of |
+| code blocks     |
+|-----------------|
+| block           |
+| inline          |
+
+#+BEGIN_EXAMPLE
+
+,#+NAME: <name>
+,#+BEGIN_SRC <language> <switches> <header arguments>
+       <body>
+,#+END_SRC
+
+#+END_EXAMPLE
+
+
+#+BEGIN_EXAMPLE
+src_<language>{<body>}
+#+END_EXAMPLE
+
+or
+
+#+BEGIN_EXAMPLE
+src_<language>[<header arguments>]{<body>}
+#+END_EXAMPLE
