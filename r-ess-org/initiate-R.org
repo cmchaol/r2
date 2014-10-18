@@ -1,0 +1,19 @@
+initiate R
+
+| environment              | command | reference |
+|--------------------------+---------+-----------|
+| in a terminal            | R       |           |
+|                          |         |           |
+| in emacs (into ess)      | M-x R   |           |
+|                          |         |           |
+| in org source code block |         |           |
+| edit in ess              | C-c '   |         1 |
+|                          |         |           |
+
+
+
+reference
+
+1
+
+[[http://orgmode.org/manual/Editing-source-code.html#Editing-source-code]]
