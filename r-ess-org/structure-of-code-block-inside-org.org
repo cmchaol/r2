@@ -25,3 +25,13 @@ or
 #+BEGIN_EXAMPLE
 src_<language>[<header arguments>]{<body>}
 #+END_EXAMPLE
+
+|                    |                   |          |
+| #+NAME: <name>     | name of the block | optional |
+|                    |                   |          |
+| <language>         |                   |          |
+|                    |                   |          |
+| <switches>         | control export    | optional |
+|                    |                   |          |
+| <header arguments> |                   | optional |
+|                    |                   |          |
