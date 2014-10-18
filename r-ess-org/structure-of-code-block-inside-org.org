@@ -8,7 +8,7 @@
 | block                        |
 | inline                       |
 
-#+BEGIN_EXAMPLE
+#+BEGIN_EXAMPLE -n
 ,#+NAME: <name>
 ,#+BEGIN_SRC <language> <switches> <header arguments>
        <body>
@@ -26,12 +26,24 @@ or
 src_<language>[<header arguments>]{<body>}
 #+END_EXAMPLE
 
-|                    |                   |          |
-| #+NAME: <name>     | name of the block | optional |
-|                    |                   |          |
-| <language>         |                   |          |
-|                    |                   |          |
-| <switches>         | control export    | optional |
-|                    |                   |          |
-| <header arguments> |                   | optional |
-|                    |                   |          |
+|                    |                                      |          |
+| #+NAME: <name>     | name of the block                    | optional |
+|                    |                                      |          |
+| <language>         |                                      |          |
+|                    |                                      |          |
+| <switches>         | control code block export            | optional |
+|                    |                                      |          |
+| <header arguments> | Code block specific header arguments | optional |
+|                    |                                      |          |
+
+<switches>
+    Optional switches control code block export (see the discussion of switches in Literal examples) 
+
+[[http://orgmode.org/manual/Literal-examples.html#Literal-examples]]
+
+-n +n -r -k
+
+
+Code block specific header arguments
+
+[[http://orgmode.org/manual/Code-block-specific-header-arguments.html#Code-block-specific-header-arguments]]
