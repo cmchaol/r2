@@ -3,19 +3,16 @@
 [[http://orgmode.org/manual/Structure-of-code-blocks.html#Structure-of-code-blocks]]
 
 
-| 2 structures of |
-| code blocks     |
-|-----------------|
-| block           |
-| inline          |
+| 2 structures of  code blocks |
+|------------------------------|
+| block                        |
+| inline                       |
 
 #+BEGIN_EXAMPLE
-
 ,#+NAME: <name>
 ,#+BEGIN_SRC <language> <switches> <header arguments>
        <body>
 ,#+END_SRC
-
 #+END_EXAMPLE
 
 
