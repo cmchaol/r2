@@ -4,7 +4,7 @@ Code block specific header arguments
 
 The most common way to assign values to header arguments is at the code block level. 
 
-| examples  | 3 locations                                  | 3 formats               |
+| examples  | 4 locations                                  | 4 formats               |
 |-----------+----------------------------------------------+-------------------------|
 | example 1 | in the line of #+BEGIN_SRC                   | :exports code           |
 |           |                                              |                         |
