@@ -1,0 +1,27 @@
+15.2 Easy Templates
+
+[[http://orgmode.org/manual/Easy-Templates.html#Easy-Templates]]
+
+#+BEGIN_EXAMPLE
+s 	#+BEGIN_SRC ... #+END_SRC
+e 	#+BEGIN_EXAMPLE ... #+END_EXAMPLE
+q 	#+BEGIN_QUOTE ... #+END_QUOTE
+v 	#+BEGIN_VERSE ... #+END_VERSE
+c 	#+BEGIN_CENTER ... #+END_CENTER
+l 	#+BEGIN_LaTeX ... #+END_LaTeX
+L 	#+LaTeX:
+h 	#+BEGIN_HTML ... #+END_HTML
+H 	#+HTML:
+a 	#+BEGIN_ASCII ... #+END_ASCII
+A 	#+ASCII:
+i 	#+INDEX: line
+I 	#+INCLUDE: line 
+#+END_EXAMPLE
+
+To insert a structural element, type a ‘<’, followed by a template selector and <TAB>.
+
+for example, to insert #+BEGIN_EXAMPLE ... #+END_EXAMPLE, type 3 keystrokes, < e <TAB>, and get:
+
+: #+BEGIN_EXAMPLE
+: 
+: #+END_EXAMPLE
