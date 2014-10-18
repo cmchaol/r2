@@ -20,7 +20,13 @@ I 	#+INCLUDE: line
 
 To insert a structural element, type a ‘<’, followed by a template selector and <TAB>.
 
-for example, to insert #+BEGIN_EXAMPLE ... #+END_EXAMPLE, type 3 keystrokes, < e <TAB>, and get:
+for example, to insert #+BEGIN_EXAMPLE ... #+END_EXAMPLE, type the following 3 keystrokes
+
+| <     |
+|       |
+| e     |
+|       |
+| <TAB> |
 
 : #+BEGIN_EXAMPLE
 : 
