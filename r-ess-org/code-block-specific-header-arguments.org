@@ -1,0 +1,52 @@
+Code block specific header arguments
+
+[[http://orgmode.org/manual/Code-block-specific-header-arguments.html#Code-block-specific-header-arguments]]
+
+The most common way to assign values to header arguments is at the code block level. 
+
+| examples  | 3 locations                                  | 3 formats               |
+|-----------+----------------------------------------------+-------------------------|
+| example 1 | in the line of #+BEGIN_SRC                   | :exports code           |
+|           |                                              |                         |
+| example 2 | inline code blocks                           | [:exports both]         |
+|           |                                              |                         |
+| example 3 | before the line of #+BEGIN_SRC               | #+HEADERS: :var data1=1 |
+|           |                                              |                         |
+| example 4 | between the lines of #+NAME: and #+BEGIN_SRC | #+HEADER: :var data=2   |
+
+example 1 
+#+BEGIN_EXAMPLE
+,#+NAME: factorial
+,#+BEGIN_SRC haskell :results silent :exports code :var n=0
+fac 0 = 1
+fac n = n * fac (n-1)
+,#+END_SRC
+#+END_EXAMPLE
+
+example 2
+#+BEGIN_EXAMPLE
+src_haskell[:exports both]{fac 5}
+#+END_EXAMPLE
+
+example 3
+#+BEGIN_EXAMPLE
+,#+HEADERS: :var data1=1
+,#+BEGIN_SRC emacs-lisp :var data2=2
+  (message "data1:%S, data2:%S" data1 data2)
+,#+END_SRC
+
+,#+RESULTS:
+: data1:1, data2:2
+#+END_EXAMPLE
+
+example 4
+#+BEGIN_EXAMPLE
+,#+NAME: named-block
+,#+HEADER: :var data=2
+,#+BEGIN_SRC emacs-lisp
+  (message "data:%S" data)
+,#+END_SRC
+
+,#+RESULTS: named-block
+: data:2
+#+END_EXAMPLE
