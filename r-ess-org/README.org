@@ -22,7 +22,4 @@ https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
 
 *** Babel: Introduction
 
-
-http://orgmode.org/worg/org-contrib/babel/intro.html#spreadsheet
-
-
+http://orgmode.org/worg/org-contrib/babel/intro.html#introduction
