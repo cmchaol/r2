@@ -11,11 +11,18 @@
 
 ** description statistics
 
+
 ** important reference
 
 *** Using Emacs, Org-mode and R for Research Writing in Social Sciences: A Toolkit for Writing Reproducible Research Papers and Monographs
 
 https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
 
+
+
+*** Babel: Introduction
+
+
+http://orgmode.org/worg/org-contrib/babel/intro.html#spreadsheet
 
 
