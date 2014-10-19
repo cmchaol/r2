@@ -1,0 +1,23 @@
+code languages to be setup in emacs and executed in org
+
+| error scenario                        |
+|---------------------------------------|
+|                                       |
+| prepare code block in org file        |
+|                                       |
+| execute the code block by C-c C-c     |
+|                                       |
+| No org-babel-execute function for ... |
+|                                       |
+| customize the code languages in emacs |
+|                                       |
+| c-h v org-babel-load-languages        |
+|                                       |
+| execute the code block again          |
+|                                       |
+
+code languages to be setup in emacs and executed in org
+
+[[http://orgmode.org/manual/Languages.html#Languages]]
+
+c-h v org-babel-load-languages 
