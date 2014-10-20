@@ -23,3 +23,8 @@ https://github.com/vikasrawal/orgpaper/blob/master/orgpapers.org
 *** Babel: Introduction
 
 http://orgmode.org/worg/org-contrib/babel/intro.html#introduction
+
+*** R Source Code Blocks in Org Mode
+
+http://orgmode.org/worg/org-contrib/babel/languages/ob-doc-R.html#sec-3-3
+
