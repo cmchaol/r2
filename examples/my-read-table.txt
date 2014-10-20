@@ -1,15 +1,24 @@
 #+NAME: read.table
 #+BEGIN_SRC R
 
-    df = read.table(THEFILE, header = TRUE, fill = TRUE, sep = ",")
+  df = read.table(THEFILE, header = TRUE, fill = TRUE, sep = ",")
+
   dim(df)
+
   class(df)
+
   names(df)
 
 #+END_SRC
 
+#+call: read.table("breast.csv")
+
 #+RESULTS: 
 #+BEGIN_EXAMPLE
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'breast.csv': No such file or directory
 [1] 2175   85
 [1] "data.frame"
  [1] "Reg.No"              "CNO"                 "Cname"              
@@ -42,3 +51,5 @@
 [82] "relapse.site3"       "relapse.DATE3"       "Death.Detail"       
 [85] "Death"
 #+END_EXAMPLE
+
+[[https://docs.google.com/spreadsheets/d/1Wzp-4xfkpOqILsr5oPCMxnpab68ee32G-qcvPv9rQRE/edit#gid=1914295030]]
