@@ -1,0 +1,22 @@
+Reproducible Research of Taiwan Cancer Registry
+
+癌登可重複性研究
+
+In 2012, a survey done for Nature found that 47 out of 53 medical research papers on the subject of cancer were irreproducible.
+
+Nature 483 (7391): 531–533. [[doi:10.1038/483531a]]
+
+
+
+Dimensions of reproducibility
+
+The Associate Editor for reproducibility (AER)  will consider three different criteria when evaluating the reproducibility of an article. 
+
+Data
+
+Code
+
+Reproducible
+
+Peter J. Diggle, Scott L. Zeger
+The Author 2009. Published by Oxford University Press. 
