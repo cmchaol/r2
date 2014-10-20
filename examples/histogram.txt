@@ -7,5 +7,7 @@ histogram of the variable: THECOLUMNNAME
 
 #+END_SRC
 
+#+call: hist()
+
 #+RESULTS: 
 : hist1.png
