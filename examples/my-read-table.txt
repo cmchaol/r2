@@ -1,5 +1,5 @@
 #+NAME: read.table
-#+BEGIN_SRC R
+#+BEGIN_SRC R :session :var THEFILE="breast.csv" :results output
 
   df = read.table(THEFILE, header = TRUE, fill = TRUE, sep = ",")
 
@@ -51,5 +51,3 @@ In file(file, "rt") :
 [82] "relapse.site3"       "relapse.DATE3"       "Death.Detail"       
 [85] "Death"
 #+END_EXAMPLE
-
-[[https://docs.google.com/spreadsheets/d/1Wzp-4xfkpOqILsr5oPCMxnpab68ee32G-qcvPv9rQRE/edit#gid=1914295030]]
