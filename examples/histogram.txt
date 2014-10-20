@@ -1,0 +1,11 @@
+histogram of the variable: THECOLUMNNAME
+
+#+NAME: hist
+#+BEGIN_SRC R :session :results output :file hist1.png :results graphics :var THECOLUMNNAME="Tumor.Size.P"
+   
+  hist(df[,THECOLUMNNAME])
+
+#+END_SRC
+
+#+RESULTS: 
+: hist1.png
