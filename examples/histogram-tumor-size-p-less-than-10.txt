@@ -1,0 +1,54 @@
+histogram of the variable: THECOLUMNNAME
+
+x.sub <- subset(x.df, y > 2)
+
+[[http://www.ats.ucla.edu/stat/r/faq/subset_R.htm]]
+
+#+NAME: hist2
+#+BEGIN_SRC R
+
+
+  df.sub <- subset(df, df[,THECOLUMNNAME] < 10)
+
+  hist(df.sub[,THECOLUMNNAME])
+
+#+END_SRC
+
+#+call: hist2("Tumor.Size.P")
+
+#+RESULTS: 
+: hist3.png
+
+
+histogram of the variable: THECOLUMNNAME
+
+#+NAME: hist
+#+BEGIN_SRC R :session :results output :file hist2.png :results graphics :var THECOLUMNNAME="Tumor.Size.P"
+   
+
+  hist(df[,THECOLUMNNAME])
+
+#+END_SRC
+
+
+#+call: hist("Nodes.Exam")
+
+
+#+RESULTS: 
+: hist2.png
+
+
+
+histogram of the variable: THECOLUMNNAME
+
+#+NAME: hist
+#+BEGIN_SRC R :session :results output :file hist1.png :results graphics :var THECOLUMNNAME="Tumor.Size.P"
+   
+  hist(df[,THECOLUMNNAME])
+
+#+END_SRC
+
+#+call: hist()
+
+#+RESULTS: 
+: hist1.png
