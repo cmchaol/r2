@@ -29,4 +29,4 @@ Reference-style:
 
 #+CAPTION: This is the caption for the next figure link (or table)
 #+NAME: fig:SED-HR4049
-[[hist1.png]]
+[[hist1.png][This is a link]]
