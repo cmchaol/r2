@@ -26,4 +26,6 @@ Reference-style:
 
 [logo]: [[https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png]] "Logo Title Text 2"
 
+#+CAPTION: This is the caption for the next figure link (or table)
+#+NAME:   fig:SED-HR4049
 [[hist1.png]]
