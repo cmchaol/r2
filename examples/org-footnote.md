@@ -10,7 +10,7 @@ _________________
 
 
 
-This is a book.[^1] I like this book. [2]
+This is a book.[^1] I like this book. [^2]
 
 I also like that book. [3]
 
@@ -25,7 +25,7 @@ _________
 
 [^1]: hello
 
-[2] hi
+[^2] hi
 
 [3] hello again
 
