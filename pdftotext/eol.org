@@ -1,0 +1,49 @@
+End Of Line (aka EOL, newline) conventions in {Windows, Unix, Mac}
+
+Emacs: Newline Representation ^M ^J ^L
+
+Emacs Buffers Always Use LF
+
+In emacs buffer, the newline char is always just Line Feed (\n; “^J”; ASCII 10), regardless what OS you are running emacs on. 
+Emacs will display {^J, ^M} only when the file's newline chars cannot be interpreted in a consistent way.
+
+[[http://ergoemacs.org/emacs/emacs_line_ending_char.html]]
+
+
+
+
+M-x whitespace-mode
+
+[[http://stackoverflow.com/questions/293761/how-do-i-make-emacs-show-blank-spaces]]
+
+replace
+
+M-x replace-string C-q C-j RET RET
+
+
+[[http://stackoverflow.com/questions/5194294/how-to-remove-all-newlines-from-selected-region-in-emacs]]
+
+| step | purpose            |                     | minibuffer show |
+|------+--------------------+---------------------+-----------------|
+|    0 | show the Line Feed |                     |                 |
+|      |                    | M-x whitespace-mode |                 |
+|      |                    |                     |                 |
+|------+--------------------+---------------------+-----------------|
+|    1 | select the text    |                     |                 |
+|      |                    | control+space       | Mark set        |
+|      |                    | move the cursor     |                 |
+|      |                    |                     |                 |
+|------+--------------------+---------------------+-----------------|
+|    2 | replace            |                     |                 |
+|      |                    |                     |                 |
+|  2.1 |                    | M-x replace-string  |                 |
+|      |                    |                     |                 |
+|  2.2 |                    | enter               |                 |
+|      |                    |                     |                 |
+|  2.3 |                    | C-q C-j             |                 |
+|      |                    |                     |                 |
+|  2.4 |                    | enter               |                 |
+|      |                    |                     |                 |
+|  2.5 |                    | enter               |                 |
+
+M-x replace-string (enter) C-q C-j  (enter)  (enter) 
