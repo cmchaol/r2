@@ -5,19 +5,7 @@ pdftotext
 
 End Of Line (aka EOL, newline) conventions in {Windows, Unix, Mac}
 
-| step |                          |                      |
-|------+--------------------------+----------------------|
-| 1    | show eol in emacs buffer |                      |
-|      |                          |                      |
-| 2    | remove eol               |                      |
-|      |                          |                      |
-| 2.1  |                          | select the paragraph |
-|      |                          |                      |
-| 2.2  |                          | replace the eol      |
-|      |                          |                      |
-
-
-
+*  pdftotext-manpage
 
 * reference
 
