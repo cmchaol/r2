@@ -1,0 +1,170 @@
+* template pdftotext src block 
+
+template pdftotext src block 
+
+** scheme
+
+| block | description               |
+|-------+---------------------------|
+|     1 | define the pdf path       |
+|       | modification is mandatory |
+|       |                           |
+|     2 | show the pdf path         |
+|       |                           |
+|     3 | show the first page text  |
+|       |                           |
+|     4 | show the whole text       |
+|       |                           |
+
+| step | objective                | block | command           |                                        |
+|------+--------------------------+-------+-------------------+----------------------------------------|
+|    1 | modify the block name    |     1 |                   |                                        |
+|      |                          |       | modify the name   |                                        |
+|      |                          |       |                   |                                        |
+|      |                          |       | from              | #+NAME: the_pdf_path_block_template    |
+|      |                          |       |                   |                                        |
+|      |                          |       | to                | #+NAME: the_pdf_path_block             |
+|      |                          |       |                   |                                        |
+|------+--------------------------+-------+-------------------+----------------------------------------|
+|    2 | define the pdf path      |     1 |                   |                                        |
+|      |                          |       | fill in the path  |                                        |
+|      |                          |       |                   |                                        |
+|      |                          |       | from              | the_pdf_path=""                        |
+|      |                          |       |                   |                                        |
+|      |                          |       | to                | the_pdf_path="the/path/to/example.pdf" |
+|      |                          |       |                   |                                        |
+|------+--------------------------+-------+-------------------+----------------------------------------|
+|    3 | show the path            |     2 | run it            |                                        |
+|      |                          |       |                   | move the cursor inside block 2         |
+|      |                          |       |                   |                                        |
+|      |                          |       |                   | C-c C-c                                |
+|      |                          |       |                   |                                        |
+|------+--------------------------+-------+-------------------+----------------------------------------|
+|    4 | show the first page text |     3 | run it            | similar in step 3, but inside block 3  |
+|      |                          |       |                   |                                        |
+|------+--------------------------+-------+-------------------+----------------------------------------|
+|    5 | show the whole text      |     4 | run it            | similar in step 3, but inside block 4  |
+|      |                          |       |                   |                                        |
+|------+--------------------------+-------+-------------------+----------------------------------------|
+|    6 | remove eol (end of line) |     4 | run emacs command |                                        |
+|      |                          |       |                   | see eol.org                            |
+|      |                          |       |                   |                                        |
+|      |                          |       |                   | M-x replace-string C-q C-j             |
+|      |                          |       |                   |                                        |
+
+** block 1
+#+NAME: the_pdf_path_block
+#+BEGIN_SRC sh
+
+the_pdf_path="/home/c5766/tmpfs/r2/taiwan-cancer-registry/history/history-of-taiwan-cancer-registry-2011.pdf"
+
+#+END_SRC
+
+
+
+
+
+** block 2
+#+HEADERS: :noweb yes
+#+HEADERS: :results raw
+#+HEADERS: :tangle yes
+#+BEGIN_SRC sh
+
+<<the_pdf_path_block>>
+
+echo "the_pdf_path " $the_pdf_path
+
+#+END_SRC
+
+#+RESULTS:
+the_pdf_path  /home/c5766/tmpfs/r2/taiwan-cancer-registry/history/history-of-taiwan-cancer-registry-2011.pdf
+
+
+
+
+
+
+** block 3
+#+HEADERS: :noweb yes
+#+HEADERS: :results raw
+#+BEGIN_SRC sh
+
+<<the_pdf_path_block>>
+
+pdftotext -f 1 -l 1 -raw $the_pdf_path -
+
+
+#+END_SRC
+
+#+RESULTS:
+35
+癌症登記的意義與源起
+癌症登記(Cancer Registration)係根據
+癌症個案的各項特質，進行有系統且持續
+性的收集與紀錄。在1926年，美國麻州綜
+合醫院 (Massachusetts General Hospital)針
+對骨肉瘤進行第一個特定部位之癌症登記
+系統(Site-specific Cancer Registry)。同
+年，康乃狄克州之耶魯紐哈芬醫院(Yale-
+New Haven Hospital)也建立第一個以醫院
+為基礎的癌症登記系統(Hospital-based
+Cancer Registry)。全球首先建置以人口為
+基礎之癌症登記系統(Population-based
+Cancer Registry)是在1929年德國所建立。
+之後歐美各國紛紛陸續成立全國性之癌症
+登記系統，由此可見，先進國家早已十分
+重視癌症登記資料庫的設立，且一個國家
+是否建立癌症的流行病學資料，已成為該
+國公共衛生與醫學水準的重要指標。
+臺灣癌症登記發展
+我國最早開始進行以醫院為基礎的癌
+症登記作業系統，可追溯至1970年。由台
+北榮民總醫院癌病中心陳光耀教授，率先
+以電腦建檔完成全院的癌症登記資料，且
+於1975年首先公布全國第一份以醫院為基
+礎之五年男女癌症罹病數與十種常見癌症
+的分年統計報告。同年，陳光耀教授更建
+言衛生署除了建立長期性的全國癌症登記
+系統外，癌症的申報應使用國際統一病
+名、應登錄個案身分證號以及登記電腦化
+作業。而台大醫院在1976年由宋瑞樓、陳
+拱北與邱仕榮教授的努力下，於病歷室成
+立癌症登記小組，收集全院癌症個案並定
+期追蹤。自此，兩大醫界龍頭成為全國癌
+症登記收錄的重要啟蒙者。
+衛生署有鑑於癌症登記資料對於防制
+政策之重要性，在衛生署保健處葉金川技
+正規畫下，自1979年起開始針對全國50床
+以上醫院辦理癌症登記系統（稱為台灣癌
+症登記短表資料庫），申報新發癌症個案
+的流行病學和診斷治療摘要資料，期能有
+效搜集癌症發生資料與建立癌症監測系
+統。然而辦理初期因人力與經驗不足的情
+況下，於1983年7月至1987年6月委託台北
+榮民總醫院癌病中心代辦，之後才又移交
+回衛生署保健處與資訊中心辦理癌登資料
+輸入、檢核與統計分析。然而資料收錄與
+台灣癌症登記發展與沿革
+賴美淑
+台大公共衛生學院預防醫學研究所教授
+
+
+
+
+
+
+** block 4
+#+HEADERS: :noweb yes
+#+HEADERS: :results raw
+#+BEGIN_SRC sh
+
+<<the_pdf_path_block>>
+
+pdftotext -raw -nopgbrk $the_pdf_path pdf.txt
+
+#+END_SRC
+
+#+RESULTS:
+
+
+
