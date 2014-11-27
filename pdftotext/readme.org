@@ -1,0 +1,20 @@
+pdftotext
+
+
+* 
+
+
+
+
+* reference
+
+wikipedia
+
+http://en.wikipedia.org/wiki/Pdftotext
+
+
+
+online manpage
+
+http://linux.die.net/man/1/pdftotext
+
