@@ -40,6 +40,7 @@ Hello world!
 
 ** the bibliography environment
 
+#+BEGIN_EXAMPLE
 \begin{thebibliography}{9}
 
 	\bibitem{lamport94}
@@ -52,6 +53,30 @@ Hello world!
 \end{thebibliography}
 
 
+#+END_EXAMPLE
+
+** the whole 
 
 
+#+BEGIN_EXAMPLE
+\documentclass{article}
+\begin{document}
+
+Hello world!
+
+\begin{thebibliography}{9}
+
+	\bibitem{lamport94}
+	  Leslie Lamport,
+	  \emph{\LaTeX: A Document Preparation System}.
+	  Addison Wesley, Massachusetts,
+	  2nd Edition,
+	  1994.
+
+\end{thebibliography}
+
+
+\end{document}
+
+#+END_EXAMPLE
 
