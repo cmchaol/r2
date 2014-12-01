@@ -121,6 +121,7 @@ BibTeX allows you to store all your references in an external, flat-file databas
 
 *** the contents of example-20.tex:
 
+#+BEGIN_EXAMPLE
 \documentclass{article}
 
 \begin{document}
@@ -129,11 +130,13 @@ Hello world!!\cite{greenwade93}
 \bibliographystyle{plain}
 \bibliography{sample}
 
-\end{document}
+\end{document
+
+#+END_EXAMPLE
 
 
 *** the contents of sample-20.bib
-
+#+BEGIN_EXAMPLE
 @article{greenwade93,
     author  = "George D. Greenwade",
     title   = "The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})",
@@ -143,4 +146,6 @@ Hello world!!\cite{greenwade93}
     number  = "3",
     pages   = "342--351"
 }
+
+#+END_EXAMPLE
 
