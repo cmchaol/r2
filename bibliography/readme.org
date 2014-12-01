@@ -119,7 +119,7 @@ BibTeX allows you to store all your references in an external, flat-file databas
 |      |                         |                     |
 
 
-*** the contents of example-20.tex:
+** the contents of example-20.tex:
 
 #+BEGIN_EXAMPLE
 \documentclass{article}
@@ -135,7 +135,7 @@ Hello world!!\cite{greenwade93}
 #+END_EXAMPLE
 
 
-*** the contents of sample-20.bib
+** the contents of sample-20.bib
 #+BEGIN_EXAMPLE
 @article{greenwade93,
     author  = "George D. Greenwade",
