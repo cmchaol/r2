@@ -1,0 +1,9 @@
+
+bibliography
+
+
+|                      |                |                           |
+| tex                  | pdf            | png                       |
+|----------------------+----------------+---------------------------|
+| embeded bibliography | example-00.pdf | example-00-density300.png |
+|                      |                |                           |
