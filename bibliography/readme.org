@@ -7,4 +7,5 @@ bibliography
 |----------------------+----------------+---------------------------|
 | embeded bibliography | example-00.pdf | example-00-density300.png |
 |                      |                | example-00-density300.gif |
+|                      |                | example-00-density300.jpg |
 |                      |                |                           |
