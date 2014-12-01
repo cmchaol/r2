@@ -1,6 +1,7 @@
 
 bibliography
 
+* file description
 
 |                      |                |                           |
 | tex                  | pdf            |                           |
@@ -9,3 +10,45 @@ bibliography
 |                      |                | example-00-density300.gif |
 |                      |                | example-00-density300.jpg |
 |                      |                |                           |
+
+* embed bibliography
+
+
+
+| step |                                     |
+|------+-------------------------------------|
+|      | insert the simple tex template      |
+|      |                                     |
+|      | insert the bibliography environment |
+|      |                                     |
+|      | insert the \cite{cite_key}          |
+|      | \cite{lamport94}                    |
+|      |                                     |
+|      | compile the tex                     |
+
+** the simple tex template
+
+\documentclass{article}
+\begin{document}
+
+Hello world!
+
+\end{document}
+
+** the bibliography environment
+
+\begin{thebibliography}{9}
+
+	\bibitem{lamport94}
+	  Leslie Lamport,
+	  \emph{\LaTeX: A Document Preparation System}.
+	  Addison Wesley, Massachusetts,
+	  2nd Edition,
+	  1994.
+
+\end{thebibliography}
+
+
+
+
+
