@@ -3,13 +3,16 @@ bibliography
 
 * file description
 
-|                      |                |                           |
-| tex                  | pdf            |                           |
-|----------------------+----------------+---------------------------|
-| embeded bibliography | example-00.pdf | example-00-density300.png |
-|                      |                | example-00-density300.gif |
-|                      |                | example-00-density300.jpg |
-|                      |                |                           |
+| scheme               | tex            | pdf            | image                     |
+|----------------------+----------------+----------------+---------------------------|
+| embeded bibliography | example-00.tex | example-00.pdf | example-00-density300.png |
+|                      |                |                | example-00-density300.gif |
+|                      |                |                | example-00-density300.jpg |
+|                      |                |                |                           |
+|----------------------+----------------+----------------+---------------------------|
+| bibtex               | example-20.tex | example-20.pdf |                           |
+|                      |                |                |                           |
+|                      |                |                |                           |
 
 * embed bibliography
 
@@ -79,4 +82,65 @@ Hello world!
 \end{document}
 
 #+END_EXAMPLE
+
+
+* bibtex
+
+
+
+http://www.andy-roberts.net/writing/latex/bibliographies
+
+BibTeX allows you to store all your references in an external, flat-file database. 
+
+
+
+** steps [2014-11-25 Tue 10:54]
+
+
+| step |                         | command line        |
+|------+-------------------------+---------------------|
+|      | edit the main tex file  |                     |
+|      |                         | example-20.tex      |
+|      |                         |                     |
+|------+-------------------------+---------------------|
+|      | edit the reference file |                     |
+|      |                         | sample-20.bib       |
+|      |                         |                     |
+|------+-------------------------+---------------------|
+|      | generate the output     |                     |
+|      |                         |                     |
+|      |                         | lualatex example-20 |
+|      |                         | bibtex example-20   |
+|      |                         | lualatex example-20 |
+|      |                         | lualatex example-20 |
+|      |                         |                     |
+|------+-------------------------+---------------------|
+|      | view the output         |                     |
+|      |                         |                     |
+
+
+*** the contents of example-20.tex:
+
+\documentclass{article}
+
+\begin{document}
+Hello world!!\cite{greenwade93}
+
+\bibliographystyle{plain}
+\bibliography{sample}
+
+\end{document}
+
+
+*** the contents of sample-20.bib
+
+@article{greenwade93,
+    author  = "George D. Greenwade",
+    title   = "The {C}omprehensive {T}ex {A}rchive {N}etwork ({CTAN})",
+    year    = "1993",
+    journal = "TUGBoat",
+    volume  = "14",
+    number  = "3",
+    pages   = "342--351"
+}
 
