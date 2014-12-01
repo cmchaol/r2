@@ -28,12 +28,15 @@ bibliography
 
 ** the simple tex template
 
+#+BEGIN_EXAMPLE
 \documentclass{article}
 \begin{document}
 
 Hello world!
 
 \end{document}
+
+#+END_EXAMPLE
 
 ** the bibliography environment
 
